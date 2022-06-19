@@ -1,5 +1,10 @@
-const clock =document.querySelector('.clock');
+const hour =document.querySelector('.hour');
 
-setInterval (getHour(){
-    let date = new Date
-}, 1000);
+function digitalClock() {
+    let dateTime = new Date();
+    // console.log(dateTime);
+    let clock = dateTime.toLocaleTimeString();
+    // console.log(clock);
+    hour.innerText = clock;
+}
+setInterval(digitalClock, 1000);

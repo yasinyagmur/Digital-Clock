@@ -10,6 +10,7 @@ body{
 .container{
     border: 1px white solid;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -17,5 +18,15 @@ body{
 .hour{
     font-size: 3rem;
     color: aqua;
+    font-family: 'Orbitron', sans-serif;
+}
+.date{
+    font-size: 3rem;
+    color: rgb(0, 255, 149);
+    font-family: 'Orbitron', sans-serif;
+}
+.text{
+    font-size: 3rem;
+    color: rgb(250, 253, 253);
     font-family: 'Orbitron', sans-serif;
 }

@@ -1,4 +1,5 @@
 const hour =document.querySelector('.hour');
+const date = document.querySelector('.date');
 
 function digitalClock() {
     let dateTime = new Date();
@@ -8,3 +9,11 @@ function digitalClock() {
     hour.innerText = clock;
 }
 setInterval(digitalClock, 1000);
+
+function getDate(){
+    let showdate = new Date ();
+    let showdateNow = showdate.toLocaleDateString();
+    date.innerText = showdateNow;
+}
+
+getDate()
